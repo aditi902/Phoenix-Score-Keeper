@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORE-KEEPER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style>
+        .winner{
+            color: green;
+        }
+
+        .loser{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+      <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img
+                                    src="https://media.istockphoto.com/photos/businessman-suit-with-chess-board-game-plan-stratgy-and-tactic-picture-id1256422923?b=1&k=20&m=1256422923&s=170667a&w=0&h=t039Cn8gv2CC2IpPkhbFxgTopvc6Le6t6hbWsCRDsyc=">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Pheonix Score-Keeper
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1"><span id="p1points">0</span> to <span id="p2points">0</span></h1>
+                                <p class="subtitle">You can score using the buttons given below!</p>
+                                <label for="uptoPoint" class="label is-large is-line">Playing till:</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="uptoPoint">
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Btn" class="button is-link is-hovered is-medium is-fullwidth is-rounded">+1
+                                PLAYER:1</button>
+                            <button id="p2Btn" class="button is-primary is-hovered is-medium is-fullwidth is-rounded">+1
+                                PLAYER:2</button>
+                            <button id="reset"
+                                class="button is-danger is-hovered is-medium is-fullwidth is-rounded">RESET</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+
+    
+    <script src="scorekeeper.js"></script>
+</body>
+</html> 
